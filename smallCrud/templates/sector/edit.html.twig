@@ -13,7 +13,7 @@
     <a class="btn btn-primary " href="{{ path('sector_index') }}">Cancelar</a>
 </div>
 <div class="container text-center mt-3 col-6 mx-auto">
-    <a href="{{ path('sector_confirmar_borrar', {'id': sector.id}) }}">Eliminar sector</a>
+    <a class="btn btn-danger" href="{{ path('sector_confirmar_borrar', {'id': sector.id}) }}">Eliminar sector</a>
 </div>
 
 {% endblock %}

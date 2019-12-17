@@ -19,9 +19,9 @@
         </tbody>
     </table>
 {# botones #}
-    <a href="{{ path('sector_index') }}">Volver a Sectores</a>
-    <a href="{{ path('sector_edit', {'id': sector.id}) }}">Editar sector</a>
-    <a href="{{ path('sector_confirmar_borrar', {'id': sector.id}) }}">Eliminar sector</a>
+    <a class="btn mx-1 btn-primary "href="{{ path('sector_index') }}">Volver a Sectores</a>
+    <a class="btn mx-1 btn-success "href="{{ path('sector_edit', {'id': sector.id}) }}">Editar sector</a>
+    <a class="btn mx-1 btn-danger "href="{{ path('sector_confirmar_borrar', {'id': sector.id}) }}">Eliminar sector</a>
 
 </div>
 
