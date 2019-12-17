@@ -1,0 +1,10 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Bienvenido{% endblock %}
+
+{% block body %}
+<div class="container m-5 col-5 mx-auto text-center">
+    <a class="btn btn-elegant bg-dark text-light w-50 my-3" href="{{ path('empresa_index') }}">Empresas</a>
+    <a class="btn btn-elegant bg-dark text-light w-50 my-3" href="{{ path('sector_index') }}">Sectores</a>
+</div>
+{% endblock %}

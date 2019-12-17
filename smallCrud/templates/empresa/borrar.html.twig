@@ -1,0 +1,9 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    <p>Estas seguro de querer borrar la siguiente empresa? : {{ empresa.nombreEmpresa }}</p>
+{# botones #}
+    <a class="btn btn-danger" href="{{ path('empresa_borrar', {'id': empresa.id }) }}">Borrar</a>
+    <a class="btn btn-primary" href="{{ path('empresa_index') }}">Cancelar</a>
+    
+{% endblock %}
