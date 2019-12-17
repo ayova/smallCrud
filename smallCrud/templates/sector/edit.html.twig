@@ -3,11 +3,17 @@
 {% block title %}Edit Sector{% endblock %}
 
 {% block body %}
-    <h1>Edit Sector</h1>
 
-    {{ include('sector/_form.html.twig', {'button_label': 'Update'}) }}
+<div class="container text-center col-6 mx-auto">
+    <h1>Editar sector: {{ sector.nombreSector}}</h1>
+    {{ include('sector/_form.html.twig', {'button_label': 'Actualizar'}) }}
+</div>
 
-    <a href="{{ path('sector_index') }}">back to list</a>
+<div class="container text-center mt-3 col-6 mx-auto">
+    <a class="btn btn-primary " href="{{ path('sector_index') }}">Cancelar</a>
+</div>
+<div class="container text-center mt-3 col-6 mx-auto">
+    <a href="{{ path('sector_confirmar_borrar', {'id': sector.id}) }}">Eliminar sector</a>
+</div>
 
-    {{ include('sector/_delete_form.html.twig') }}
 {% endblock %}

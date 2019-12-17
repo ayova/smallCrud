@@ -104,6 +104,7 @@ class EmpresaController extends AbstractController
             'id' => $id,
         ]);
         
+        // borrar $empresa :
         // $em->remove($empresa);
         // $em->flush();
 
@@ -126,6 +127,8 @@ class EmpresaController extends AbstractController
         
         $em->remove($empresa);
         $em->flush();
+
+        // mostrar html antes de borrar? - suplantado por empresa_confirmar_borrar
         // $this->render('empresa/borrar.html.twig', [
         //     'empresa' => $empresa,
         // ]);

@@ -15,7 +15,7 @@
 
 </div>
 <div class="container text-center mt-3 col-6 mx-auto">
-    {{ include('empresa/_delete_form.html.twig') }}
+    <a class="btn btn-danger" href="{{ path('empresa_confirmar_borrar', {'id': empresa.id }) }}">Eliminar</a>
 
 </div>
 
