@@ -144,7 +144,7 @@ class EmpresaController extends AbstractController
 /**
  * Codigo autogenerado por make:crud
  * dejado por referencia
- * suplantado por function propia 'borrar' 
+ * suplantado por function 'borrar' 
  */
     // public function delete(Request $request, Empresa $empresa): Response
     // {

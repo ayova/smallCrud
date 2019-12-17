@@ -3,8 +3,9 @@
 {% block title %}Nueva Empresa{% endblock %}
 
 {% block body %}
-    <h1>Crear nueva empresa</h1>
 <div class="container col-6 mx-auto ">
+    <h1>Crear nueva empresa</h1>
+
     {{ include('empresa/_form.html.twig') }}
     <a class="btn btn-danger mt-3" href="{{ path('empresa_index') }}">Cancelar</a>
 
