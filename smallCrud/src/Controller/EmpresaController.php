@@ -24,8 +24,8 @@ class EmpresaController extends AbstractController
     public function index(EmpresaRepository $empresaRepository): Response
     {
         $sector = new Sector();
-        $sector = $this->getDoctrine()->getRepository(Sector::class)->findAll();      
-
+        $sector = $this->getDoctrine()->getRepository(Sector::class)->findAll();   
+        
         return $this->render('empresa/index.html.twig', [
             'empresas' => $empresaRepository->findAll(),
             'sector' => $sector,
