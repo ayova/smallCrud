@@ -11,6 +11,8 @@ use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
+use Doctrine\ORM\EntityManagerInterface;
+
 
 
 
@@ -21,7 +23,13 @@ class EmpresaType extends AbstractType
     {
 
         // $sector = new Sector();
-        // $sector = $this->getDoctrine()->getRepository(Sector::class)->findAll();      
+        // $sector = $sector->getDoctrine()->getRepository(Sector::class)->findAll();    
+        
+        // $choices = [];
+        // foreach ($sector as $key => $value) {
+        //     $choices[$key] = $value;
+        // }
+        // var_dump($choices);
 
         $builder
             ->add('nombre_empresa', TextType::class, ['required'=> true,])
@@ -31,9 +39,7 @@ class EmpresaType extends AbstractType
                 'required' => true,
                 ]);
 
-        // $builder->addEventListener(FormEvents::PRE_SET_DATA, function (FormEvent $event) {
-        //     // ... add a choice list of friends of the current application user
-        // });
+
     
 
     }
